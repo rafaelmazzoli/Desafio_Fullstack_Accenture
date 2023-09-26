@@ -4,14 +4,14 @@
     "C:\\Users\\rafael.m.camargo\\OneDrive - Accenture\\Development\\Desafio_Fullstack_Accenture\\Desafio_Fullstack_Accenture.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rafael.m.camargo\\OneDrive - Accenture\\Development\\DatabaseAccess\\DatabaseAccess.csproj": {
+    "C:\\Users\\rafael.m.camargo\\OneDrive - Accenture\\Development\\Desafio_Fullstack_Accenture\\Desafio_Fullstack_Accenture.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rafael.m.camargo\\OneDrive - Accenture\\Development\\DatabaseAccess\\DatabaseAccess.csproj",
-        "projectName": "DatabaseAccess",
-        "projectPath": "C:\\Users\\rafael.m.camargo\\OneDrive - Accenture\\Development\\DatabaseAccess\\DatabaseAccess.csproj",
+        "projectUniqueName": "C:\\Users\\rafael.m.camargo\\OneDrive - Accenture\\Development\\Desafio_Fullstack_Accenture\\Desafio_Fullstack_Accenture.csproj",
+        "projectName": "Desafio_Fullstack_Accenture",
+        "projectPath": "C:\\Users\\rafael.m.camargo\\OneDrive - Accenture\\Development\\Desafio_Fullstack_Accenture\\Desafio_Fullstack_Accenture.csproj",
         "packagesPath": "C:\\Users\\rafael.m.camargo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rafael.m.camargo\\OneDrive - Accenture\\Development\\DatabaseAccess\\obj\\",
+        "outputPath": "C:\\Users\\rafael.m.camargo\\OneDrive - Accenture\\Development\\Desafio_Fullstack_Accenture\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rafael.m.camargo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -44,78 +44,13 @@
               "target": "Package",
               "version": "[2.0.151, )"
             },
-            "Microsoft.Data.SqlClient": {
-              "target": "Package",
-              "version": "[5.1.1, )"
-            },
-            "Microsoft.Extensions.Configuration.Abstractions": {
-              "target": "Package",
-              "version": "[7.0.0, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\rafael.m.camargo\\OneDrive - Accenture\\Development\\Desafio_Fullstack_Accenture\\Desafio_Fullstack_Accenture.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\rafael.m.camargo\\OneDrive - Accenture\\Development\\Desafio_Fullstack_Accenture\\Desafio_Fullstack_Accenture.csproj",
-        "projectName": "Desafio_Fullstack_Accenture",
-        "projectPath": "C:\\Users\\rafael.m.camargo\\OneDrive - Accenture\\Development\\Desafio_Fullstack_Accenture\\Desafio_Fullstack_Accenture.csproj",
-        "packagesPath": "C:\\Users\\rafael.m.camargo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rafael.m.camargo\\OneDrive - Accenture\\Development\\Desafio_Fullstack_Accenture\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\rafael.m.camargo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net7.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
-            "projectReferences": {
-              "C:\\Users\\rafael.m.camargo\\OneDrive - Accenture\\Development\\DatabaseAccess\\DatabaseAccess.csproj": {
-                "projectPath": "C:\\Users\\rafael.m.camargo\\OneDrive - Accenture\\Development\\DatabaseAccess\\DatabaseAccess.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
-          "dependencies": {
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[7.0.11, )"
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.1.1, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
