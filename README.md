@@ -3,13 +3,13 @@
 ## Tecnologias utilizadas
 
 - Dapper
-	- Para abstraÁ„o da base de dados
+	- Para abstra√ß√£o da base de dados
 - SQL Server
-	- Banco de dados da soluÁ„o
+	- Banco de dados da solu√ß√£o
 
 ## Mapeamento do banco de dados
 
-Adicionar a string de conex„o do banco de dados criado pelo projeto Desafio_Fullstack_Accenture_Database[https://github.com/rafaelmazzoli/Desafio_Fullstack_Accenture_Database] dentro do arquivo appsettings.json com o seguinte padr„o:
+Adicionar a string de conex√£o do banco de dados criado pelo projeto [Desafio_Fullstack_Accenture_Database](https://github.com/rafaelmazzoli/Desafio_Fullstack_Accenture_Database) dentro do arquivo appsettings.json com o seguinte padr√£o:
 
 ```
 ConnectionStrings": {
