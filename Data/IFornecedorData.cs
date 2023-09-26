@@ -1,14 +1,13 @@
-﻿using Desafio_Fullstack_Accenture.Models;
-
-namespace Desafio_Fullstack_Accenture.Data
+﻿namespace Desafio_Fullstack_Accenture.Data
 {
     public interface IFornecedorData
     {
-        Task<IFornecedor?> Delete(int id);
-        Task<IEnumerable<IFornecedor>> GetAll();
-        Task<IFornecedor?> GetById(int id);
-        Task<Fornecedor_Cnpj?> InsertCnpj(Fornecedor_Cnpj fornecedor);
-        Task<Fornecedor_Cpf?> InsertCpf(Fornecedor_Cpf fornecedor);
-        Task<IFornecedor?> Update(IFornecedor fornecedor);
+        Task<Fornecedor?> Delete(int id);
+        Task<IEnumerable<Fornecedor>> GetAll();
+        Task<Fornecedor?> GetById(int id);
+        Task<Fornecedor?> InsertCnpj(Fornecedor fornecedor);
+        Task<Fornecedor?> InsertCpf(Fornecedor fornecedor);
+        Task<Fornecedor?> UpdateCpf(Fornecedor fornecedor);
+        Task<Fornecedor?> UpdateCnpj(Fornecedor fornecedor);
     }
 }

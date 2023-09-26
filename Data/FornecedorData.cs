@@ -12,40 +12,47 @@ namespace Desafio_Fullstack_Accenture.Data
             _database = database;
         }
 
-        public Task<IEnumerable<IFornecedor>> GetAll() =>
-            _database.ExecuteProcedure<IFornecedor, dynamic>("dbo.Fornecedor_GetAll", new { });
+        public Task<IEnumerable<Fornecedor>> GetAll() =>
+            _database.ExecuteProcedure<Fornecedor, dynamic>("dbo.Fornecedor_GetAll", new { });
 
-        public async Task<IFornecedor?> GetById(int id)
+        public async Task<Fornecedor?> GetById(int id)
         {
-            var results = await _database.ExecuteProcedure<IFornecedor, dynamic>("dbo.Fornecedor_Get", new { Id = id });
+            var results = await _database.ExecuteProcedure<Fornecedor, dynamic>("dbo.Fornecedor_Get", new { Id = id });
 
             return results.FirstOrDefault();
         }
 
-        public async Task<Fornecedor_Cpf?> InsertCpf(Fornecedor_Cpf fornecedor)
+        public async Task<Fornecedor?> InsertCpf(Fornecedor fornecedor)
         {
-            var results = await _database.ExecuteProcedure<Fornecedor_Cpf, dynamic>("dbo.Fornecedor_Insert_Cpf", new { fornecedor.Nome, fornecedor.Cnpj_Cpf, fornecedor.Cep, fornecedor.Email, fornecedor.Rg, fornecedor.Data_Nascimento });
+            var results = await _database.ExecuteProcedure<Fornecedor, dynamic>("dbo.Fornecedor_Insert_Cpf", new { fornecedor.Nome, Cpf = fornecedor.Cnpj_Cpf, fornecedor.Cep, fornecedor.Email, fornecedor.Rg, fornecedor.Data_Nascimento });
 
             return results.FirstOrDefault();
         }
 
-        public async Task<Fornecedor_Cnpj?> InsertCnpj(Fornecedor_Cnpj fornecedor)
+        public async Task<Fornecedor?> InsertCnpj(Fornecedor fornecedor)
         {
-            var results = await _database.ExecuteProcedure<Fornecedor_Cnpj, dynamic>("dbo.Fornecedor_Insert_Cpf", new { fornecedor.Nome, fornecedor.Cnpj_Cpf, fornecedor.Cep, fornecedor.Email });
+            var results = await _database.ExecuteProcedure<Fornecedor, dynamic>("dbo.Fornecedor_Insert_Cnpj", new { fornecedor.Nome, Cnpj = fornecedor.Cnpj_Cpf, fornecedor.Cep, fornecedor.Email });
 
             return results.FirstOrDefault();
         }
 
-        public async Task<IFornecedor?> Update(IFornecedor fornecedor)
+        public async Task<Fornecedor?> UpdateCpf(Fornecedor fornecedor)
         {
-            var results = await _database.ExecuteProcedure<IFornecedor, dynamic>("dbo.Fornecedor_Update", fornecedor);
+            var results = await _database.ExecuteProcedure<Fornecedor, dynamic>("dbo.Fornecedor_Update_Cpf", new { fornecedor.Id, fornecedor.Nome, Cpf = fornecedor.Cnpj_Cpf, fornecedor.Cep, fornecedor.Email, fornecedor.Rg, fornecedor.Data_Nascimento });
 
             return results.FirstOrDefault();
         }
 
-        public async Task<IFornecedor?> Delete(int id)
+        public async Task<Fornecedor?> UpdateCnpj(Fornecedor fornecedor)
         {
-            var results = await _database.ExecuteProcedure<IFornecedor, dynamic>("dbo.Fornecedor_Delete", new { Id = id });
+            var results = await _database.ExecuteProcedure<Fornecedor, dynamic>("dbo.Fornecedor_Update_Cnpj", new { fornecedor.Id, fornecedor.Nome, Cnpj = fornecedor.Cnpj_Cpf, fornecedor.Cep, fornecedor.Email });
+
+            return results.FirstOrDefault();
+        }
+
+        public async Task<Fornecedor?> Delete(int id)
+        {
+            var results = await _database.ExecuteProcedure<Fornecedor, dynamic>("dbo.Fornecedor_Delete", new { Id = id });
 
             return results.FirstOrDefault();
         }

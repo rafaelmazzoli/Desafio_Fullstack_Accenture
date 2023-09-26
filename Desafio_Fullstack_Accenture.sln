@@ -5,7 +5,7 @@ VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Desafio_Fullstack_Accenture", "Desafio_Fullstack_Accenture.csproj", "{2F3D882D-386A-4BD4-807A-AA3DBB7E3C25}"
 EndProject
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Desafio_Fullstack_Accenture_Database", "..\SQLServerDatabase\Desafio_Fullstack_Accenture_Database.sqlproj", "{2A98ADC9-3F2E-47BE-8A63-3C5937D33B6D}"
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Desafio_Fullstack_Accenture_Database", "..\Desafio_Fullstack_Accenture_Database\Desafio_Fullstack_Accenture_Database.sqlproj", "{2A98ADC9-3F2E-47BE-8A63-3C5937D33B6D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

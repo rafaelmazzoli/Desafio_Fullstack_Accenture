@@ -1,3 +1,4 @@
+using Desafio_Fullstack_Accenture.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Desafio_Fullstack_Accenture.Controllers
@@ -22,6 +23,10 @@ namespace Desafio_Fullstack_Accenture.Controllers
         [HttpPost]
         public async Task<IActionResult> Insert(Empresa empresa, IEmpresaData empresaData)
         {
+            ViaCep viaCep = new ViaCep();
+            var response = await viaCep.ValidaCep(empresa.Cep);
+            if(!response.IsSuccessStatusCode) return BadRequest("Cep Inválido");
+
             var empresaResult = await empresaData.Insert(empresa);
 
             if (empresaResult == null) return NotFound();
@@ -32,6 +37,10 @@ namespace Desafio_Fullstack_Accenture.Controllers
         [HttpPut("{Id}")]
         public async Task<IActionResult> Update(int Id, Empresa empresa, IEmpresaData empresaData)
         {
+            ViaCep viaCep = new ViaCep();
+            var response = await viaCep.ValidaCep(empresa.Cep);
+            if (!response.IsSuccessStatusCode) return BadRequest("Cep Inválido");
+
             empresa.SetId(Id);
 
             var empresaResult = await empresaData.Update(empresa);

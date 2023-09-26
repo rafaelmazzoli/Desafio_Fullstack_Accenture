@@ -45,8 +45,6 @@ C:\Users\rafael.m.camargo\OneDrive - Accenture\Development\Desafio_Fullstack_Acc
 C:\Users\rafael.m.camargo\OneDrive - Accenture\Development\Desafio_Fullstack_Accenture\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 C:\Users\rafael.m.camargo\OneDrive - Accenture\Development\Desafio_Fullstack_Accenture\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\rafael.m.camargo\OneDrive - Accenture\Development\Desafio_Fullstack_Accenture\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
-C:\Users\rafael.m.camargo\OneDrive - Accenture\Development\Desafio_Fullstack_Accenture\bin\Debug\net7.0\DatabaseAccess.dll
-C:\Users\rafael.m.camargo\OneDrive - Accenture\Development\Desafio_Fullstack_Accenture\bin\Debug\net7.0\DatabaseAccess.pdb
 C:\Users\rafael.m.camargo\OneDrive - Accenture\Development\Desafio_Fullstack_Accenture\obj\Debug\net7.0\Desafio_Fullstack_Accenture.csproj.AssemblyReference.cache
 C:\Users\rafael.m.camargo\OneDrive - Accenture\Development\Desafio_Fullstack_Accenture\obj\Debug\net7.0\Desafio_Fullstack_Accenture.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\rafael.m.camargo\OneDrive - Accenture\Development\Desafio_Fullstack_Accenture\obj\Debug\net7.0\Desafio_Fullstack_Accenture.AssemblyInfoInputs.cache
@@ -68,3 +66,4 @@ C:\Users\rafael.m.camargo\OneDrive - Accenture\Development\Desafio_Fullstack_Acc
 C:\Users\rafael.m.camargo\OneDrive - Accenture\Development\Desafio_Fullstack_Accenture\obj\Debug\net7.0\Desafio_Fullstack_Accenture.pdb
 C:\Users\rafael.m.camargo\OneDrive - Accenture\Development\Desafio_Fullstack_Accenture\obj\Debug\net7.0\Desafio_Fullstack_Accenture.genruntimeconfig.cache
 C:\Users\rafael.m.camargo\OneDrive - Accenture\Development\Desafio_Fullstack_Accenture\obj\Debug\net7.0\ref\Desafio_Fullstack_Accenture.dll
+C:\Users\rafael.m.camargo\OneDrive - Accenture\Development\Desafio_Fullstack_Accenture\bin\Debug\net7.0\Newtonsoft.Json.dll
