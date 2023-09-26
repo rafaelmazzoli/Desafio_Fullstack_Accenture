@@ -1,0 +1,3 @@
+﻿global using Desafio_Fullstack_Accenture.Infrastructure;
+global using Desafio_Fullstack_Accenture.Data;
+global using Desafio_Fullstack_Accenture.Models;
